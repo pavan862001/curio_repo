@@ -1,0 +1,41 @@
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<h1>Check the details entered....!</h1>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+</head>
+<body>
+
+<table>
+ <tr>
+ 	<td>Student Id</td>	<td><p th:text="${student.id}"></p></td>
+ </tr>
+ <tr>
+ 	<td>Student Name</td>	<td><p th:text="${student.studentName}"></p></td>
+ </tr>
+ <tr>
+ 	<td>Student stream</td>	<td><p th:text="${student.stream}"></p></td>
+ </tr>
+<tr>
+ 	<td>Student email</td>	<td><p th:text="${student.email}"></p></td>
+ </tr>
+ <tr>
+ 	<td>Student phone no</td>	<td><p th:text="${student.phoneno}"></p></td>
+ </tr>
+ <tr>
+ 	<td>Student college name</td>	<td><p th:text="${student.collegename}"></p></td>
+ </tr>
+ <tr>
+ 	<td>Student gender</td>	<td><p th:text="${student.gender}"></p></td>
+ </tr>
+ <tr>
+ 	<td>Student address</td>	<td><p th:text="${student.address}"></p></td>
+ </tr>
+</table>
+<a href="startpage.html"><button type="submit" class="proceedbtn">Proceed</button></a>
+</body>
+
+</html>
