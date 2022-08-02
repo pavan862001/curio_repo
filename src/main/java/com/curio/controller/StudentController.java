@@ -9,7 +9,6 @@ import javax.validation.Valid;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -53,7 +52,7 @@ public class StudentController {
 		
 		Student s1 = new Student();
 		Student s2 = new Student();
-		s1.setId(128);
+		s1.setInt_id(128);
 		s1.setStudentName("naveen");
 		s1.setStream("IT");
 		s1.setEmail("naveen@gmail.com");
@@ -61,7 +60,7 @@ public class StudentController {
 		s1.setCollegename("Nizam college hyderabad");
 		s1.setGender("Male");
 		s1.setAddress("hyderabad");
-		s2.setId(129);
+		s2.setInt_id(129);
 		s2.setStudentName("nithin");
 		s2.setStream("MECH");
 		s2.setEmail("nithin@gmail.com");
@@ -80,7 +79,7 @@ public class StudentController {
 		
 		Student s1 = new Student();
 		Student s2 = new Student();
-		s1.setId(121);
+		s1.setInt_id(121);
 		s1.setStudentName("Pawan");
 		s1.setStream("IT");
 		s1.setEmail("pavan@gmail.com");
@@ -88,7 +87,7 @@ public class StudentController {
 		s1.setCollegename("Nizam college hyderabad");
 		s1.setGender("Male");
 		s1.setAddress("hyderabad");
-		s2.setId(122);
+		s2.setInt_id(122);
 		s2.setStudentName("Shirsha");
 		s2.setStream("MECH");
 		s2.setEmail("shirisha@gmail.com");

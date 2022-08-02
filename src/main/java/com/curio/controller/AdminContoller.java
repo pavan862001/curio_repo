@@ -21,7 +21,7 @@ public class AdminContoller {
 	public String addAdmin() {
 		
 		Admin admin = new Admin();
-		admin.setEmail("Hello@gmail.com");
+        admin.setEmail("Hello@gmail.com");
 		admin.setPassoword(hashPassword("Admin123"));
 		adminService.saveAdminData(admin);
 		Admin findById = adminRepo.SearchByEmail("Hello@gmail.com");

@@ -1,16 +1,9 @@
 package com.curio.controller;
 import com.curio.model.Internship;
-import com.curio.model.Student;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
-
 import javax.validation.Valid;
 
-import org.aspectj.lang.Aspects14;
-import org.hibernate.criterion.AggregateProjection;
-import org.springframework.data.relational.core.sql.SQL;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -46,8 +39,8 @@ public class InternshipController {
 	public ResponseEntity<List<Internship>> findAll(){
 		
 		Internship i1 = new Internship();
-		//Internship i2 = new Internship();
-		i1.setId(128);
+		
+		i1.setI_id(128);
 		i1.setR_id(121);
 		i1.setIc_id(126);
 		i1.setTitle("sample Internship");
